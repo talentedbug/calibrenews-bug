@@ -26,6 +26,7 @@ class WiredDailyNews(BasicNewsRecipe):
     category = 'news, IT, computers, technology'
     oldest_article = 45
     max_articles_per_feed = 200
+    compress_news_images = True
     no_stylesheets = True
     encoding = 'utf-8'
     use_embedded_content = False

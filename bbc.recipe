@@ -143,7 +143,7 @@ class BBCNews(BasicNewsRecipe):
         # ("Wales", "https://feeds.bbci.co.uk/news/wales/rss.xml"),
         # ("N. Ireland", "https://feeds.bbci.co.uk/news/northern_ireland/rss.xml"),
         # ("Africa", "https://feeds.bbci.co.uk/news/world/africa/rss.xml"),
-        # ("Asia", "https://feeds.bbci.co.uk/news/world/asia/rss.xml"),
+        ("Asia", "https://feeds.bbci.co.uk/news/world/asia/rss.xml"),
         # ("Europe", "https://feeds.bbci.co.uk/news/world/europe/rss.xml"),
         # ("Latin America", "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml"),
         # ("Middle East", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
@@ -221,6 +221,7 @@ class BBCNews(BasicNewsRecipe):
     # BBC feeds.
     #
     max_articles_per_feed = 100
+    compress_news_images = True
 
     # The max age of articles which may be downloaded from each feed. This is
     # specified in days - note fractions of days are allowed, Eg. 2.5 (2 and a

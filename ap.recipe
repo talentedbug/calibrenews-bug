@@ -20,6 +20,7 @@ class AssociatedPress(BasicNewsRecipe):
     ignore_duplicate_articles = {'title', 'url'}
     remove_empty_feeds = False
     oldest_article = 1.5
+    compress_news_images = True
 
     keep_only_tags = [
         classes('Page-headline Page-lead Page-storyBody Page-authorinfo'),

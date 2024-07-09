@@ -21,6 +21,7 @@ class NewYorker(BasicNewsRecipe):
     language = 'en_US'
     __author__ = 'Kovid Goyal'
     no_stylesheets = True
+    compress_news_images = True
     timefmt = ' [%b %d]'
     encoding = 'utf-8'
     extra_css = '''
