@@ -1,3 +1,5 @@
+> This is a fork of [Calibre News Delivery](https://github.com/bookfere/Calibre-News-Delivery) used by the Bug himself. Refer to the original repository to create your own instead of forking this one.
+
 __English__ · [简体中文](README.zh-CN.md)
 
 ---
