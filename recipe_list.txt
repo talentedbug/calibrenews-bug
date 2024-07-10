@@ -1,7 +1,8 @@
 bbc.recipe
 ap.recipe
 new_yorker.recipe
-nytimes.recipe
 slashdot.recipe
 wired.recipe
-lwn.recipe
+economist.recipe
+wsj.recipe
+
