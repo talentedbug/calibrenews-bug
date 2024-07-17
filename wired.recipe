@@ -31,6 +31,7 @@ class WiredDailyNews(BasicNewsRecipe):
     no_stylesheets = True
     encoding = 'utf-8'
     use_embedded_content = False
+    compress_news_images = True
     language = 'en'
     ignore_duplicate_articles = {'url'}
     remove_empty_feeds = True
