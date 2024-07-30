@@ -3,5 +3,4 @@ slashdot.recipe
 wired.recipe
 economist.recipe
 wsj.recipe
-lkml.recipe
 xkcd.recipe
