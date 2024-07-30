@@ -1,0 +1,37 @@
+__license__ = 'GPL v3'
+__copyright__ = '2024 lkml.org'
+
+import re
+
+from calibre.web.feeds.news import BasicNewsRecipe
+
+
+class lkmlRecipe(BasicNewsRecipe):
+    title = u'LKML.ORG Latest'
+    description = u'Linux Kernel Mailing List'
+    __author__ = 'lkml.org'
+    language = 'en'
+    lang = 'em-US'
+    category = 'mailing, linux'
+    timefmt = ' [%a, %d %b %Y]'
+    publication_type = 'blog'
+    remove_empty_feeds = True
+    use_embedded_content = False
+    oldest_article = 7
+    max_articles_per_feed = 1000
+    publisher = 'LKML.ORG'
+    masthead_url = u'https://lkml.org/images/toprowlk.gif'
+
+    conversion_options = {'publisher': publisher,
+                          'language': lang,
+                          }
+    feeds = [
+        (u'Today', u'https://lkml.org/rss.php')
+    ]
+    # omit articles already linked in Schlagzeilen feed
+    ignore_duplicate_articles = {'title', 'url'}
+
+    # use the cover presented on the homepage
+    cover_url = 'https://www.linux.org/images/logo.png'
+
+    no_stylesheets = True  # default value is False, but True makes process much faster
